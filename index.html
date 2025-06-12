@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Static Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Raleway', sans-serif;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            backdrop-filter: blur(10px);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #e0e0e0;
+        }
+
+        .btn {
+            margin-top: 30px;
+            padding: 12px 25px;
+            font-size: 1rem;
+            background: #ffffff;
+            color: #0072ff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #0072ff;
+            color: #fff;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                width: 90%;
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🌟 Welcome to My Website 🌟</h1>
+        <p>This is a colorful and modern static website deployed using Docker and Jenkins. Enjoy the vibes!</p>
+        <button class="btn">Explore More</button>
+    </div>
+</body>
+</html>
